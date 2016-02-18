@@ -1,28 +1,7 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This the very first Ruby on Rails app from Michael Arnold, the very talented and charismatic entrepreneur from Germany. 
 
-Things you may want to cover:
+If you ever have the pleasure to own this piece of software, feel free to give you a pat on the back. You are awesome. Not as awesome as I am, but close. Well, not close at all, but you're alright.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Have fun and spread the word that a new coder is born!
