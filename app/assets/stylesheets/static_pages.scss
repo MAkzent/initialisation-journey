@@ -8,4 +8,10 @@ $primary-color: #333;
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  background-color: #F2F1EF;
+}
+
+.content p {
+	margin-left: 10%;
+	margin-right: 10%;
 }
