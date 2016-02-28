@@ -19,7 +19,7 @@ default: &default
   pool: 5
   encoding: unicode
   timeout: 5000
-  username: Michael
+  username: Michael_admin
   password: michi33
 
 development:
