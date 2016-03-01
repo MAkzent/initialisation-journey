@@ -1,14 +1,19 @@
 <p id="notice"><%= notice %></p>
 
+<div class="content">
+
 <h1>Listing Products</h1>
+
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
       <th>Description</th>
+      <th>Color</th>
+      <th>Price</th>
       <th>Image url</th>
-      <th colspan="3"></th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
@@ -17,6 +22,8 @@
       <tr>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
+        <td><%= product.color %></td>
+        <td><%= product.price %></td>
         <td><%= product.image_url %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
@@ -26,7 +33,26 @@
   </tbody>
 </table>
 
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <% @products.each do |product| %>
+    <div class="col-sm-2 col-md-4">
+      <%= image_tag(product.image_url, class:"img-responsive", height: 'auto', width: '150px') %>
+      <div class="product-info">
+        <p class="product-price"> $<%=product.price%> </p>
+        <h4 class="product-title"> <%=product.name%> </h4>
+      </div>
+  </div> <!-- col -->
+    <% end %>
+  </div>
+</div>
+
 <br>
 
 <%= link_to 'New Product', new_product_path %>
+
+</div>
 
