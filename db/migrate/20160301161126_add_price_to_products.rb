@@ -1,6 +1,6 @@
 class AddPriceToProducts < ActiveRecord::Migration
 
-   def up
+   def change
     change_column :products, :price, :integer
   end
 
