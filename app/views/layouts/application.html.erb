@@ -30,6 +30,13 @@
 					<li><a href="#">Home<span class="sr-only">(current)</span></a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Contact</a></li>
+					<li>
+						<%= form_tag("/products", method: "get") do %>
+  					<%= label_tag(:q, "Search for:") %>
+  					<%= text_field_tag(:q) %>
+  					<%= submit_tag("Search") %>
+  					<% end %>
+					</li>
 				</ul>
 			</div>
 		</div>
